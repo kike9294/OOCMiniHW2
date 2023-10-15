@@ -49,6 +49,7 @@ public class Drone implements Flyable {
         return this.goForward;
     }
 
+    //Have no idea what this two last methods mean!.
     @Override
     public String getMake() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
