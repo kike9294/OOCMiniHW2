@@ -10,10 +10,21 @@ package oocminihw2;
  */
 public class Drone implements Flyable {
     
+    //Properties
     private float goUp;
     private float goForward;
     private float direction;
 
+    //Constructor
+    public Drone(float goUp, float goForward, float direction) {
+        this.goUp = goUp;
+        this.goForward = goForward;
+        this.direction = direction;
+    }
+    
+    
+
+    //Methods
     @Override
     public void changeAltitude(float change) {
         this.goUp = change;
