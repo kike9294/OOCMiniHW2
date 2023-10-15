@@ -9,40 +9,44 @@ package oocminihw2;
  * @author enriq
  */
 public class Drone implements Flyable {
+    
+    private float goUp;
+    private float goForward;
+    private float direction;
 
     @Override
     public void changeAltitude(float change) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.goUp = change;
     }
 
     @Override
     public float getAltitude() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.goUp;
     }
 
     @Override
     public void accelerate(float speed) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.goForward = speed;
     }
 
     @Override
     public void brake() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        System.out.println("The drone is desacelerating");
     }
 
     @Override
     public void turn(float angle) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.direction = angle;
     }
 
     @Override
     public float getDirection() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.direction;
     }
 
     @Override
     public float getSpeed() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        return this.goForward;
     }
 
     @Override
