@@ -16,6 +16,7 @@ public class OOCMiniHW2 {
     public static void main(String[] args) {
         Drone myDrone = new Drone();
         Car Lamborghini = new Car();
+        Sailboat myBoat = new Sailboat();
     }
     
 }

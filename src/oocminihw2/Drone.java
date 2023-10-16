@@ -14,13 +14,6 @@ public class Drone implements Flyable {
     private float goUp;
     private float goForward;
     private float direction;
-
-    //Constructor
-    public Drone(float goUp, float goForward, float direction) {
-        this.goUp = goUp;
-        this.goForward = goForward;
-        this.direction = direction;
-    }
     
     
 
